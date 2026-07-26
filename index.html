@@ -844,7 +844,7 @@
   }
   .rec-mini-attr{ display:flex; flex-direction:column; gap:2px; }
   .rec-name-sm{ font-size:14px; color:var(--gold); font-weight:600; }
-  .rec-role-sm{ font-size:12px; color:var(--muted); }
+  .rec-role-sm{ font-size:13.5px; color:var(--gold); font-weight:600; }
 
   /* ---------- SPEAKING ---------- */
   .speak-grid{
@@ -905,7 +905,7 @@
   .b-card.b-founder{
     border:1px solid var(--gold);
   }
-  .b-badge{
+  .b-card > .b-badge{
     position:absolute;
     top:20px; right:20px;
     font-size:11px;
@@ -1162,18 +1162,18 @@
     z-index:1;
     transform:translate3d(-50%,-50%,0);
     opacity:0;
-    mix-blend-mode:screen;
     will-change:transform;
   }
   .cursor-glow-1{
-    background:radial-gradient(circle, rgba(var(--gold-rgb),0.16), transparent 70%);
-    filter:blur(10px);
+    background:radial-gradient(circle, rgba(var(--gold-rgb),0.65) 0%, rgba(var(--gold-rgb),0.22) 42%, transparent 70%);
+    filter:blur(6px);
     transition:transform .12s linear, opacity .4s ease;
   }
   .cursor-glow-2{
-    width:640px; height:640px;
-    background:radial-gradient(circle, rgba(var(--gold-rgb),0.08), transparent 70%);
-    filter:blur(30px);
+    width:680px; height:680px;
+    background:radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.22) 45%, transparent 72%);
+    filter:blur(28px);
+    mix-blend-mode:multiply;
     transition:transform .5s cubic-bezier(.2,.6,.2,1), opacity .4s ease;
   }
   .cursor-glow.is-active{ opacity:1; }
@@ -1667,7 +1667,6 @@
           <span class="quote-mark-sm">"</span>
           <p>Consistently delivered beyond commitments. Worked closely with design, engineering, QA, product, and business teams to ensure alignment and smooth delivery. Focused on solving and simplifying real operational problems — proactively identifying and driving initiatives beyond assigned responsibilities, while effectively managing escalations and risks across competing stakeholder priorities.</p>
           <div class="rec-mini-attr">
-            <span class="rec-name-sm">Prasad Udupi</span>
             <span class="rec-role-sm">Vice President, Data Axle · 2025 Performance Review</span>
           </div>
         </div>
@@ -1675,7 +1674,6 @@
           <span class="quote-mark-sm">"</span>
           <p>I worked with Subodh on an Oracle ERP upgrade. He supported the business team with his professional expertise and leadership.</p>
           <div class="rec-mini-attr">
-            <span class="rec-name-sm">Jason Doss</span>
             <span class="rec-role-sm">MIEAust, BEng(Hons) Mech</span>
           </div>
         </div>
@@ -1683,7 +1681,6 @@
           <span class="quote-mark-sm">"</span>
           <p>Subodh is professional and competent in supporting the Oracle ERP system. He worked tirelessly to ensure that business deliverables were executed on time and below budget.</p>
           <div class="rec-mini-attr">
-            <span class="rec-name-sm">Suresh Simson</span>
             <span class="rec-role-sm">Materials Management Specialist</span>
           </div>
         </div>
@@ -1691,7 +1688,6 @@
           <span class="quote-mark-sm">"</span>
           <p>Subodh has been supporting the Baker Hughes Services team with great passion and attention to detail. His critical thinking and commitment to solving complex Oracle transactions have been pivotal for my team. Great team player and a super kind person!</p>
           <div class="rec-mini-attr">
-            <span class="rec-name-sm">Alberto Betti</span>
             <span class="rec-role-sm">Finance Director — Operations, Venture Global LNG</span>
           </div>
         </div>
@@ -1699,8 +1695,7 @@
           <span class="quote-mark-sm">"</span>
           <p>I worked with Subodh for around a year. Subodh has a good product sense, and is sincere and hard-working. I'd recommend him for any product management role.</p>
           <div class="rec-mini-attr">
-            <span class="rec-name-sm">Anshuman Das</span>
-            <span class="rec-role-sm">Direct manager</span>
+            <span class="rec-role-sm">CEO, Muvi</span>
           </div>
         </div>
       </div>
